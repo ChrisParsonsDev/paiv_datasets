@@ -12,4 +12,4 @@ If you'd like to know more about getting started with AI Vision or PowerAI in ge
 
 ## Datasets
 
-1. [MNIST](https://github.com/ChrisParsonsDev/paiv_datasets/tree/master/mnist)
+1. [MNIST](https://github.com/ChrisParsonsDev/paiv_datasets/tree/master/MNIST)
