@@ -1,10 +1,10 @@
-#PowerAI Vision demo with Chocolates
+# PowerAI Vision demo with Chocolates
 
-##Accessing PowerAI Vision
+## Accessing PowerAI Vision
 It is easy (and free) to get a running instance of AI Vision on the SuperVessel service. You can sign up and start using this immediately at: [https://ny1.ptopenlab.com/AIVision/index.html](https://ny1.ptopenlab.com/AIVision/index.html).
 There are some limitations to this service, so it is advised to use it only for simple demos and test workloads, and not for any production use cases. For instance, there are limits on the amount of data that you can work with, and many of the APIs generated will be time limited.
 
-##Building a classification model
+## Building a classification model
 In advance, create a new data set for classification. In that data set, create the following categories:
 * Caramel
 * Creme Egg
@@ -26,7 +26,7 @@ Then you can show how simple it is to convert that trained model into a webAPI, 
 
 At this point, you can demonstrate how easy it is to add an extra category (�Wispa�), and upload the pictures from that folder. You can then start training again, to build a better model. This demonstrates how easy it is to refine and retrain your model to provide extra capabilities.
 
-##Building an object detection model
+## Building an object detection model
 In advance, upload the zip file ChocolateDetectionModel.zip as a data set. This provides 150 images of chocolates that have tagged bounding boxes for the different brands of chocolate. This saves you the time and effort of tagging the images yourself. I would also recommend that you run the training in advance, as it can take over an hour to train this model using a SuperVessel instance.
 You can show the data set of images to the audience, and demonstrate how easy it is to add or remove tags from individual images. You may need to zoom out of the pictures to make it easier to see what is happening.
 The next step is to show that it is just as easy to start training with this type of data set to build an object detection model. Once you have set the training running, I would recommend moving to the pre-built model, and use it to create a new webAPI. This can be tested with the test images provided, both for individual chocolates and for multiple chocolates in an image.
