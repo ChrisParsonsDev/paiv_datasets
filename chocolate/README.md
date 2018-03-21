@@ -24,11 +24,20 @@ During the event, show the data set and start a training model for classificatio
 
 Then you can show how simple it is to convert that trained model into a webAPI, and start testing images to show the result. There are test images for Caramel, Creme Egg, and Fudge that are not in the training data set that you uploaded. After that, test with the Wispa test image - which should not be recognised correctly. Explain that this is because we have not trained the model with any images of Wispa chocolates, and in fact there is no category for Wispa. The system cannot recognise something it has not been shown.
 
-At this point, you can demonstrate how easy it is to add an extra category (�Wispa�), and upload the pictures from that folder. You can then start training again, to build a better model. This demonstrates how easy it is to refine and retrain your model to provide extra capabilities.
+At this point, you can demonstrate how easy it is to add an extra category (Wispa), and upload the pictures from that folder. You can then start training again, to build a better model. This demonstrates how easy it is to refine and retrain your model to provide extra capabilities.
+
+Alternatively, you can upload the prepared dataset **ChocolateClassificationData.zip** in the AI Vision interface, by choosing the ‘Upload from zip file’ option on the ‘My Data Sets’ page.
 
 ## Building an object detection model
-In advance, upload the zip file ChocolateDetectionModel.zip as a data set. This provides 150 images of chocolates that have tagged bounding boxes for the different brands of chocolate. This saves you the time and effort of tagging the images yourself. I would also recommend that you run the training in advance, as it can take over an hour to train this model using a SuperVessel instance.
+In advance, upload the zip file **ChocolateDetectionData.zip** as a data set. This provides 150 images of chocolates that have tagged bounding boxes for the different brands of chocolate. This saves you the time and effort of tagging the images yourself. I would also recommend that you run the training in advance, as it can take over an hour to train this model using a SuperVessel instance.
+
+You can also upload a trained model to AI Vision. On the ‘My Trained Models’ page of the AI Vision interface, choose ‘Upload zip file’ and select the **ChocolateDetectionModel.zip** file. Once uploaded this will then be available as a trained model to deploy as a webAPI for testing.
+
 You can show the data set of images to the audience, and demonstrate how easy it is to add or remove tags from individual images. You may need to zoom out of the pictures to make it easier to see what is happening.
+
 The next step is to show that it is just as easy to start training with this type of data set to build an object detection model. Once you have set the training running, I would recommend moving to the pre-built model, and use it to create a new webAPI. This can be tested with the test images provided, both for individual chocolates and for multiple chocolates in an image.
-Showing object detection in video
+
+If you use that pre-trained model, then the images **test image multiple 1.jpg** and **test image multiple 3.jpg** should give really good results, whereas the image **test image multiple 2.jpg** will only identify 2 of the chocolates. This is a great chance to explain how you could then add more images to the dataset, and retrain the model with new information to increase the accuracy. Note that the chocolates that are not identified are all seen from the side, whereas most of the data set images are taken from the front or back.
+
+## Showing object detection in video
 You can use the object detection model you just created to find chocolates in video files as well. Import the provided test video files into the Video Data Platform. You can then apply the model to the video files. I would recommend processing this in advance, to avoid waiting during the event. You will need to have deployed the object detection model as a webAPI before using it on video.
