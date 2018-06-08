@@ -19,3 +19,4 @@ There are some limitations to this service, so it is advised to use it only for 
 
 1. [MNIST](./MNIST/)
 2. [Chocolate](./chocolate/)
+3. [Beer](./beerai/)
