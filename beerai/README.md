@@ -23,3 +23,7 @@ During the event, show the data set and start a training model for classificatio
 * After the total number of iterations, we get a model with the lowest loss, and highest accuracy.
 
 Then you can show how simple it is to convert that trained model into a webAPI, and start testing images to show the result. You can test with the provided images for Becks, Guinness, and San Miguel (which are not in the training set), or you can provide your own images. You can also test an image of a bottle of beer that is not included in the data set, to show that this will not be correctly classified as the model has not been trained with that brand.
+
+## Implementation
+This data set has been used to train a model which is the back end service for a beer recognition application. This is a mobile app, available for iOS and Android, and is called BeerAI. This can be installed on a mobile device, and used to demonstrate how the models from AI Vision can be implemented into a real sorld application quickly and easily.
+There are some limitations to the application, primarily that it has only been trained on the 6 bottles of beer in the training data set.
